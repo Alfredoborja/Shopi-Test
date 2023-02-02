@@ -11,6 +11,7 @@ namespace ShopifyTest.Controllers
     public class HomeController : Controller
     {
         public static string Secret = ConfigurationManager.AppSettings["Secret"];
+        [HttpGet]
         public ActionResult Index()
         {
             var secret = Secret;
